@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home/Home";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import FindDoctors from "../Pages/FindDoctors/FindDoctors";
 
 // export const router = createBrowserRouter([
 // 	{
@@ -24,7 +25,7 @@ const Routers = () => {
 	return (
 		<Routes>
 			<Route
-				path="/"
+				
 				element={<MainLayout></MainLayout>}
 			>
 				<Route
@@ -34,6 +35,10 @@ const Routers = () => {
 				<Route
 					path="/aboutus"
 					element={<AboutUs />}
+				/>
+				<Route
+					path="/findDoctors"
+					element={<FindDoctors />}
 				/>
 			</Route>
 		</Routes>
